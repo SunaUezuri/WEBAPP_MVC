@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WEBAPP_MVC.Domain.Entities.ClassEntity>;
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Class)
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(Model => item.Class)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
