@@ -23,6 +23,12 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("Rota/Nomeada")]
+    public IActionResult RotaNomeada()
+    {
+        return Json("Baum dia!");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
